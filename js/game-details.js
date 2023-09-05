@@ -54,7 +54,6 @@ async function fetchGame() {
             const gameDetails = gameId;
             shoppingCart.push(gameDetails);
             saveCartToLocalStorage(shoppingCart);
-            console.log(shoppingCart);
             addedToCartMsg.style.display = "block";
             setTimeout(function () {
                 addedToCartMsg.style.display = "none";
