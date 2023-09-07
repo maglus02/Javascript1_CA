@@ -47,6 +47,7 @@ async function fetchGame() {
         </div>
         </div>`
 
+        /*Add to cart function (Level 2)*/
         const addToCartButton = document.querySelector(".add-to-cart");
         const addedToCartMsg = document.querySelector(".added-to-cart-msg");
         addToCartButton.addEventListener("click", function (event) {
@@ -62,6 +63,7 @@ async function fetchGame() {
                 addedToCartMsg.style.display = "none";
             });
         });
+        /*---*/
     } catch (error) {
         loader.style.display = "none";
         gameDetailContainer.innerHTML = displayError(error);
